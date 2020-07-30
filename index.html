@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<title>HTML_Can_1</title>
+
+     <script src="sketch.js"></script>
+	<script src="logo.js"></script>
+        <script src="stuff.js"></script>
+	
+		
+ <link rel="stylesheet" type="text/css" href="style.css">
+	
+  </head>
+  <body id="bod1">
+  <canvas id="can1" width="600" height="600" style="border:10px red double"></canvas>
+ 
+<input type="button" id="but1" value="click to start" onclick="func1()">
+ 
+<p id="partext">..enter a number and dblclick..<input type="text" id="inp1" width="10" ondblclick="func2()" ></p>
+ 
+ <p id="par2"> click to change size of circle
+ <input type="range" id="slider1" min="0.0" max="10.0" value="5.0" step=".1" onclick="func2A()"></p>
+ 
+<input type="button" id="but2" value="clear Canvas" onclick="clear_Can()">
+<input type="button" id="poly1A" value="number" onclick="func3()">
+<input type="button" id="lineD" value="lineD" onclick="funcLD()">
+<p id="par1">info on circle</p>
+
+ 
+
+<script>
+  /*document.getElementById("inp1").addEventListener("keyup", func2);
+ */
+  </script>
+ 
+  </body>
+</html>
