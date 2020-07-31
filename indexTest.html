@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#divbut{border:8px solid blue;}
+#but{position:absolute;top:30px;left:50px;
+border:6px double red;}
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div#myDiv {
+  
+  transform: rotate(-20deg); /* Standard syntax */
+}
+</style>
+</head>
+<body>
+<div id="divbut">
+<input type="button" id="but" value="Rotate Me" onclick="rotMe()">
+</div>
+<h1>The rotate() Method</h1>
+<p>The rotate() method rotates an element clockwise or counter-clockwise.</p>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+This div element is rotated counter-clockwise with 20 degrees.
+</div>
+<script>
+let but1;let rotAng=10;
+function rotMe(){
+but1=document.getElementById("but");
+but1.style.left=rotAng+"px";
+but1.value="I am here";
+but1.style.transform="rotate("+rotAng+"deg"+")";
+rotAng+=10;
+}
+</script>
+</body>
+</html>
